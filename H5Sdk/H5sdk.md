@@ -138,6 +138,17 @@
         }
     });
 ```
+### 3.4 用户举报
+- SDK用户举报函数： ``` YllGame.showReportView(json) //*** json  （--必填  ） ```
+- 调用示例 
+``` js
+    let json = {
+          rid:'',  // @param rid 游戏角色Id   （**必填）
+          sid: "",  // @param sid 所在游戏服id   （**必填）
+          torid: '',  // @param torid 被举报者角色id   （**必填）
+      };
+    YllGame.showReportView(json);
+```
 ## 4. 支付模块
 ### 4.1 支付
 - SDK支付调用函数： 
